@@ -9,7 +9,8 @@ int		main(int ac, char **av)
 		fd = 0;
 	else
 		fd = open(av[1], O_RDONLY);
-	ft_read(fd);
+	if (fd != -1)
+	    ft_read(fd);
 	//system("leaks a.out");
 	return (0);
 }

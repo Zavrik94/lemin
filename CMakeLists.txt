@@ -95,4 +95,4 @@ add_executable(lemin
         src/lemin.c
         src/read.c
         Makefile
-        test)
+        test src/lists.c)

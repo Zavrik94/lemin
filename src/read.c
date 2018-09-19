@@ -4,6 +4,7 @@ void	room_init(void)
 {
 	g_ants.room = (t_room*)malloc(sizeof(t_room));
 	g_ants.room->prev = NULL;
+	g_ants.rhead = g_ants.room;
 }
 
 void	read_room(char *line)
@@ -22,7 +23,6 @@ void	read_room(char *line)
 	while (line[++i] != ' ')
 		g_ants.room->name[i] = line[i];
 	temp = g_ants.room;
-	ft_printf("%s\n", g_ants.room->name);
 	g_ants.room->next = (t_room*)malloc(sizeof(t_room));
 	g_ants.room = g_ants.room->next;
 	g_ants.room->prev = temp;
@@ -31,16 +31,21 @@ void	read_room(char *line)
 void	ft_read(int fd)
 {
 	char	*line;
+    t_list	**tmp;
 
 	room_init();
+	g_ants.chead = g_ants.conn;
 	while(get_next_line(fd, &line) > 0)
 	{
 		if (ft_isnum(line) && !(ft_strstr(line, " ")) && !(ft_strstr(line, "-")))
 			g_ants.antcnt = ft_atoi(line);
 		else if (ft_isalnum(line[0]) && !(ft_strstr(line, "-")) && ft_strstr(line, " "))
 			read_room(line);
-		// else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
-		// 	read_conn(line);
+		else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
+		{
+			*tmp = ft_lstnew(line, ft_strlen(line) + 1);
+			*tmp = (*tmp)->next;
+		}
 		ft_strdel(&line);
 	}
 	g_ants.room = g_ants.room->prev;

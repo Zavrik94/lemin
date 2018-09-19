@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int		ft_strcmp(char *s1, char *s2)
 {
 	int				i;
@@ -21,6 +23,8 @@ int		ft_strcmp(char *s1, char *s2)
 	d2 = (unsigned char *)s2;
 	i = 0;
 	res = 0;
+	if (s1 == NULL || s2 == NULL)
+		return (0);
 	while (d1[i] || d2[i])
 	{
 		if (d1[i] > d2[i] || d1[i] < d2[i])
