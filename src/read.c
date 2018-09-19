@@ -39,8 +39,8 @@ void	ft_read(int fd)
 			g_ants.antcnt = ft_atoi(line);
 		else if (ft_isalnum(line[0]) && !(ft_strstr(line, "-")) && ft_strstr(line, " "))
 			read_room(line);
-		else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
-			read_conn(line);
+		// else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
+		// 	read_conn(line);
 		ft_strdel(&line);
 	}
 	g_ants.room = g_ants.room->prev;
