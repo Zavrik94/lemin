@@ -10,6 +10,6 @@ int		main(int ac, char **av)
 	else
 		fd = open(av[1], O_RDONLY);
 	ft_read(fd);
-	system("leaks a.out");
+	//system("leaks a.out");
 	return (0);
 }

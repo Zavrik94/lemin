@@ -21,7 +21,7 @@
 # include <stdbool.h>
 # include <limits.h>
 # include <sys/types.h>
-# include <sys/uio.h>
+//# include <sys/uio.h>
 # define BUFF_SIZE 8
 
 typedef struct		s_files

@@ -21,23 +21,24 @@ typedef struct		s_coo
 	int				y;
 }					t_coo;
 
-typedef struct				s_room
+typedef struct		s_room
 {
 	char			*name;
 	t_coo			coord;
-	int				*conn;
+	struct s_room	**conn;
 	struct s_room	*next;
+	struct s_room	*prev;
 }					t_room;
 
 
 typedef struct		s_lemin
 {
 	int				antcnt;
-	t_room			room;
+	t_room			*room;
 }					t_lemin;
 
 
-t_lemin				g_ants;
+t_lemin g_ants;
 
 void				ft_read(int fd);
 

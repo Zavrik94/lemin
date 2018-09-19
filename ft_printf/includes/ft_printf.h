@@ -64,5 +64,6 @@ void			indent_and_print_integer(const size_t d, t_printf *p);
 void			indent_and_print_char(const int c, t_printf *p);
 void			indent_and_print_string(const char *s, t_printf *p);
 void			indent_and_print_wide_string(const wchar_t *s, t_printf *p);
+int				ft_printf(const char *convstr, ...);
 
 #endif

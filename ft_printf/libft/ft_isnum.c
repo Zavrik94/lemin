@@ -19,7 +19,7 @@ int		ft_isnum(char const *s)
 	if (!s)
 		return (0);
 	i = 0;
-	if (ft_isdigit(s[i]) == 0 || s[i] == '+' || s[i] == '-')
+	if (ft_isdigit(s[i]) == 1 || s[i] == '+' || s[i] == '-')
 		while (s[++i])
 			if (ft_isdigit(s[i]) == 0)
 				return (0);
