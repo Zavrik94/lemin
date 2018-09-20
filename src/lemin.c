@@ -9,8 +9,10 @@ int		main(int ac, char **av)
 		fd = 0;
 	else
 		fd = open(av[1], O_RDONLY);
-	if (fd != -1)
-	    ft_read(fd);
+	if (fd < 0)
+	    return (0);
+	ft_read(fd);
+	pars_con();
 	//system("leaks a.out");
 	return (0);
 }

@@ -8,352 +8,355 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/azavrazh/projects/lemin/cmake-build-debug"/>
+				<Option working_dir="D:/trash/lemin/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/azavrazh/projects/lemin/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/azavrazh/projects/lemin/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lemin">
-				<Option output="/Users/azavrazh/projects/lemin/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/azavrazh/projects/lemin/cmake-build-debug"/>
+				<Option output="D:/trash/lemin/cmake-build-debug/lemin.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/trash/lemin/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/azavrazh/projects/lemin/ft_printf/includes"/>
-					<Add directory="/Users/azavrazh/projects/lemin/ft_printf/libft"/>
-					<Add directory="/Users/azavrazh/projects/lemin/header"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:/trash/lemin/ft_printf/includes"/>
+					<Add directory="D:/trash/lemin/ft_printf/libft"/>
+					<Add directory="D:/trash/lemin/header"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lemin/fast">
-				<Option output="/Users/azavrazh/projects/lemin/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/azavrazh/projects/lemin/cmake-build-debug"/>
+				<Option output="D:/trash/lemin/cmake-build-debug/lemin.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/trash/lemin/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/azavrazh/projects/lemin/ft_printf/includes"/>
-					<Add directory="/Users/azavrazh/projects/lemin/ft_printf/libft"/>
-					<Add directory="/Users/azavrazh/projects/lemin/header"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:/trash/lemin/ft_printf/includes"/>
+					<Add directory="D:/trash/lemin/ft_printf/libft"/>
+					<Add directory="D:/trash/lemin/header"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-7.3.0-posix-seh-rt_v5-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/azavrazh/projects/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/trash/lemin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/trash/lemin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/trash/lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/azavrazh/projects/lemin/Makefile">
+		<Unit filename="D:/trash/lemin/Makefile">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/Makefile">
+		<Unit filename="D:/trash/lemin/ft_printf/Makefile">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/includes/ft_printf.h">
+		<Unit filename="D:/trash/lemin/ft_printf/includes/ft_printf.h">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_atoi.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_atoi.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_bzero.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_bzero.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_cntchar.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_cntchar.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_cntword.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_cntword.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_copyarr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_copyarr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isalnum.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isalnum.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isalpha.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isalpha.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isascii.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isascii.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isdigit.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isdigit.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isnum.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isnum.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_isprint.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_isprint.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_itoa.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_itoa.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_itoc.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_itoc.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstadd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstadd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstdel.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstdel.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstdelone.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstdelone.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstiter.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstiter.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstmap.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstmap.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_lstnew.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_lstnew.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memalloc.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memalloc.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memccpy.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memccpy.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memchr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memchr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memcmp.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memcmp.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memcpy.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memcpy.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memdel.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memdel.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memmove.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memmove.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_memset.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_memset.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_normword.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_normword.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_printarr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_printarr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_printarr_fd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_printarr_fd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_printnumbarr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_printnumbarr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putchar.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putchar.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putchar_fd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putchar_fd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putendl.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putendl.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putendl_fd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putendl_fd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putnbr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putnbr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putnbr_fd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putnbr_fd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putstr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putstr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_putstr_fd.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_putstr_fd.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strcat.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strcat.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strchr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strchr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strclr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strclr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strcmp.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strcmp.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strcpy.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strcpy.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strdel.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strdel.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strdup.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strdup.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strequ.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strequ.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_striter.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_striter.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_striteri.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_striteri.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strjoin.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strjoin.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strlcat.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strlcat.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strlen.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strlen.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strmap.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strmap.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strmapi.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strmapi.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strncat.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strncat.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strncmp.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strncmp.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strncpy.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strncpy.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strnequ.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strnequ.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strnew.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strnew.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strnstr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strnstr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strpart.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strpart.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strrchr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strrchr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strrev.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strrev.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strscpy.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strscpy.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strsplit.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strsplit.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strstr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strstr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strsub.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strsub.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strtrim.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_strtrim.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_tolower.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_tolower.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/ft_toupper.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/ft_toupper.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/get_next_line.c">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/get_next_line.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/libft/libft.h">
+		<Unit filename="D:/trash/lemin/ft_printf/libft/libft.h">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/fill_fl_struct.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/fill_fl_struct.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/ft_printf.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/ft_printf.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/get_argument.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/get_argument.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/indent_and_print_char.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/indent_and_print_char.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/indent_and_print_integer.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/indent_and_print_integer.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/indent_and_print_string.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/indent_and_print_string.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/indent_and_print_wide_string.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/indent_and_print_wide_string.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/parseconvstr.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/parseconvstr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/ft_printf/src/print_the_bit.c">
+		<Unit filename="D:/trash/lemin/ft_printf/src/print_the_bit.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/header/lemin.h">
+		<Unit filename="D:/trash/lemin/header/lemin.h">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/src/lemin.c">
+		<Unit filename="D:/trash/lemin/src/connections.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/src/lists.c">
+		<Unit filename="D:/trash/lemin/src/lemin.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/src/read.c">
+		<Unit filename="D:/trash/lemin/src/lists.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/test">
+		<Unit filename="D:/trash/lemin/src/read.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/azavrazh/projects/lemin/CMakeLists.txt">
+		<Unit filename="D:/trash/lemin/test">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="D:/trash/lemin/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

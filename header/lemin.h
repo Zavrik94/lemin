@@ -21,6 +21,13 @@ typedef struct		s_coo
 	int				y;
 }					t_coo;
 
+typedef struct		s_con
+{
+	char 			*name;
+	struct s_con	*next;
+	struct s_con	*prev;
+}					t_con;
+
 typedef struct		s_room
 {
 	char			*name;
@@ -36,8 +43,8 @@ typedef struct		s_lemin
 	int				antcnt;
 	t_room			*room;
 	t_room          *rhead;
-	t_list         	*conn;
-	t_list			*chead;
+	t_con        	*conn;
+	t_con			*chead;
 }					t_lemin;
 
 
@@ -46,5 +53,6 @@ t_lemin g_ants;
 void				ft_read(int fd);
 void				*freelastconn(t_files *head);
 t_files     		*findinconn(t_files *head, char *str);
+void                pars_con();
 
 #endif

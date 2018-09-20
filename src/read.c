@@ -1,5 +1,12 @@
 #include <lemin.h>
 
+void	conn_init(void)
+{
+	g_ants.conn = (t_con*)malloc(sizeof(t_con));
+	g_ants.conn->prev = NULL;
+	g_ants.chead = g_ants.conn;
+}
+
 void	room_init(void)
 {
 	g_ants.room = (t_room*)malloc(sizeof(t_room));
@@ -28,13 +35,23 @@ void	read_room(char *line)
 	g_ants.room->prev = temp;
 }
 
+void	read_conn(char *line)
+{
+	t_con	*tmp;
+
+	g_ants.conn->name = ft_strdup(line);
+	tmp = g_ants.conn;
+	g_ants.conn->next = (t_con*)malloc(sizeof(t_con));
+	g_ants.conn = g_ants.conn->next;
+	g_ants.conn->prev = tmp;
+}
+
 void	ft_read(int fd)
 {
 	char	*line;
-    t_list	**tmp;
 
 	room_init();
-	g_ants.chead = g_ants.conn;
+	conn_init();
 	while(get_next_line(fd, &line) > 0)
 	{
 		if (ft_isnum(line) && !(ft_strstr(line, " ")) && !(ft_strstr(line, "-")))
@@ -42,13 +59,13 @@ void	ft_read(int fd)
 		else if (ft_isalnum(line[0]) && !(ft_strstr(line, "-")) && ft_strstr(line, " "))
 			read_room(line);
 		else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
-		{
-			*tmp = ft_lstnew(line, ft_strlen(line) + 1);
-			*tmp = (*tmp)->next;
-		}
+			read_conn(line);
 		ft_strdel(&line);
 	}
 	g_ants.room = g_ants.room->prev;
 	free(g_ants.room->next);
 	g_ants.room->next = NULL;
+	g_ants.conn = g_ants.conn->prev;
+	free(g_ants.conn->next);
+	g_ants.conn->next = NULL;
 }
