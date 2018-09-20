@@ -54,5 +54,7 @@ void				ft_read(int fd);
 void				*freelastconn(t_files *head);
 t_files     		*findinconn(t_files *head, char *str);
 void                pars_con();
+t_con				*headofcon(t_con *list);
+t_room				*headofroom(t_room *list);
 
 #endif

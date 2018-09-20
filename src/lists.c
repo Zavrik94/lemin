@@ -21,3 +21,21 @@ t_files     *findinconn(t_files *head, char *str)
     }
     return (NULL);
 }
+
+t_room	*headofroom(t_room *list)
+{
+	void	*tmp;
+
+	while (list->prev)
+		list = list->prev;
+	return(list);
+}
+
+t_con	*headofcon(t_con *list)
+{
+	void	*tmp;
+
+	while (list->prev)
+		list = list->prev;
+	return(list);
+}
