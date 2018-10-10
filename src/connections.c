@@ -19,23 +19,23 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 	char	*name2;
 	int 	i;
 
-	name2 = ft_strcat(name, "-");
+	name2 = ft_strjoin(name, "-");
 	i = 0;
 	while(con->name[i] != '-')
 		i++;
 	if (ft_strstr(con->name, name2))
 	{
 		ft_strdel(&name2);
-		name2 = ft_strscpy(con->name, i);
+		name2 = ft_strscpy(con->name, ++i);
 	}
 	else
 	{
 		ft_bzero(name2, ft_strlen(name2));
-		name2 = ft_strncpy(name2, con->name, --i);
+		name2 = ft_strncpy(name2, con->name, i);
 	}
 	while(head)
 	{
-		if(ft_strcmp(head->name, name2))
+		if(ft_strcmp(head->name, name2) == 0)
 			break;
 		head = head->next;
 	}
@@ -63,22 +63,24 @@ void    addcontorom(char *name, t_con *head)
 	g_ants.rhead->conn = (t_room**)malloc(sizeof(t_room*) * (con + 1));
 	g_ants.rhead->conn[con] = NULL;
     i = -1;
-    while(head->next)
+    while(head)
 	{
 		if (ft_strstr(head->name, name))
 			g_ants.rhead->conn[++i] = findroombycon(name, head, headofroom(g_ants.rhead));
 		head = head->next;
 	}
+    g_ants.rhead = headofroom(g_ants.rhead);
 }
 
 void    pars_con(void)
 {
-    while(g_ants.rhead)
+    g_ants.room = headofroom(g_ants.room);
+    while(g_ants.room)
     {
         addcontorom(g_ants.room->name, g_ants.chead);
-        if (!g_ants.rhead->next)
+        if (!g_ants.room->next)
 			break;
-        g_ants.rhead = g_ants.rhead->next;
+        g_ants.room = g_ants.room->next;
 		g_ants.chead = headofcon(g_ants.chead);
     }
 }
