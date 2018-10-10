@@ -83,6 +83,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/src/read.c.o"
   "CMakeFiles/lemin.dir/src/lists.c.o"
   "CMakeFiles/lemin.dir/src/connections.c.o"
+  "CMakeFiles/lemin.dir/src/path.c.o"
   "lemin.pdb"
   "lemin"
 )

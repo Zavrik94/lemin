@@ -60,6 +60,20 @@ void	ft_read(int fd)
 			read_room(line);
 		else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && !(ft_strstr(line, " ")))
 			read_conn(line);
+		else if (ft_strstr(line, "##start"))
+        {
+            ft_strdel(&line);
+            get_next_line(fd, &line);
+            read_room(line);
+            g_ants.start = g_ants.room->prev;
+        }
+        else if (ft_strstr(line, "##end"))
+        {
+            ft_strdel(&line);
+            get_next_line(fd, &line);
+            read_room(line);
+            g_ants.end = g_ants.room->prev;
+        }
 		ft_strdel(&line);
 	}
 	g_ants.room = g_ants.room->prev;

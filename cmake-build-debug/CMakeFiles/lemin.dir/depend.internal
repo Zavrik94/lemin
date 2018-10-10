@@ -248,6 +248,11 @@ CMakeFiles/lemin.dir/src/lists.c.o
  ../ft_printf/libft/libft.h
  ../header/lemin.h
  /Users/azavrazh/projects/lemin/src/lists.c
+CMakeFiles/lemin.dir/src/path.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/path.c
 CMakeFiles/lemin.dir/src/read.c.o
  ../ft_printf/includes/ft_printf.h
  ../ft_printf/libft/libft.h

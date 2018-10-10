@@ -3,6 +3,7 @@
 int		main(int ac, char **av)
 {
 	int		fd;
+
 	if (ac > 2)
 		return (0);
 	else if (ac < 2)
@@ -13,6 +14,7 @@ int		main(int ac, char **av)
 	    return (0);
 	ft_read(fd);
 	pars_con();
+	path(g_ants.start, g_ants.end);
 	//system("leaks a.out");
 	return (0);
 }

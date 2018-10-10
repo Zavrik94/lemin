@@ -31,6 +31,7 @@ typedef struct		s_con
 typedef struct		s_room
 {
 	char			*name;
+	int             path;
 	t_coo			coord;
 	struct s_room	**conn;
 	struct s_room	*next;
@@ -45,6 +46,8 @@ typedef struct		s_lemin
 	t_room          *rhead;
 	t_con        	*conn;
 	t_con			*chead;
+	t_room          *start;
+	t_room          *end;
 }					t_lemin;
 
 
@@ -56,5 +59,6 @@ t_files     		*findinconn(t_files *head, char *str);
 void                pars_con();
 t_con				*headofcon(t_con *list);
 t_room				*headofroom(t_room *list);
+void                path(t_room *start, t_room *end);
 
 #endif

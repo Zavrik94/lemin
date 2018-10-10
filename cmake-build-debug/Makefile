@@ -2364,6 +2364,33 @@ src/lists.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/lists.c.s
 .PHONY : src/lists.c.s
 
+src/path.o: src/path.c.o
+
+.PHONY : src/path.o
+
+# target to build an object file
+src/path.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/path.c.o
+.PHONY : src/path.c.o
+
+src/path.i: src/path.c.i
+
+.PHONY : src/path.i
+
+# target to preprocess a source file
+src/path.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/path.c.i
+.PHONY : src/path.c.i
+
+src/path.s: src/path.c.s
+
+.PHONY : src/path.s
+
+# target to generate assembly for a file
+src/path.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/path.c.s
+.PHONY : src/path.c.s
+
 src/read.o: src/read.c.o
 
 .PHONY : src/read.o
@@ -2649,6 +2676,9 @@ help:
 	@echo "... src/lists.o"
 	@echo "... src/lists.i"
 	@echo "... src/lists.s"
+	@echo "... src/path.o"
+	@echo "... src/path.i"
+	@echo "... src/path.s"
 	@echo "... src/read.o"
 	@echo "... src/read.i"
 	@echo "... src/read.s"

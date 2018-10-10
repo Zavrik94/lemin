@@ -248,6 +248,11 @@ CMakeFiles/lemin.dir/src/lists.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/src/lists.c.o: ../header/lemin.h
 CMakeFiles/lemin.dir/src/lists.c.o: ../src/lists.c
 
+CMakeFiles/lemin.dir/src/path.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/path.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/path.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/path.c.o: ../src/path.c
+
 CMakeFiles/lemin.dir/src/read.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/src/read.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/src/read.c.o: ../header/lemin.h

@@ -82,6 +82,7 @@ void    pars_con(void)
 			break;
         g_ants.room = g_ants.room->next;
 		g_ants.chead = headofcon(g_ants.chead);
+		g_ants.room->path = 0;
     }
 }
 

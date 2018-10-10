@@ -87,6 +87,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/azavrazh/projects/lemin/src/connections.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/connections.c.o"
   "/Users/azavrazh/projects/lemin/src/lemin.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/lemin.c.o"
   "/Users/azavrazh/projects/lemin/src/lists.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/lists.c.o"
+  "/Users/azavrazh/projects/lemin/src/path.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/path.c.o"
   "/Users/azavrazh/projects/lemin/src/read.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/read.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
