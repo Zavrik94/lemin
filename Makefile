@@ -22,7 +22,7 @@ CC := clang
 CFLAGS := -g #-Wall -Wextra -Werror
 IFLAGS := -I $(INC_D)
 
-SRC := lemin read connections path lists
+SRC := lemin read connections path lists move
 HFILES := $(INC_D)lemin.h
 
 SRCS := $(addprefix $(SRC_D), $(addsuffix .c, $(SRC)))

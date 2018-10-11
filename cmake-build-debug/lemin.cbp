@@ -350,6 +350,9 @@
 		<Unit filename="/Users/azavrazh/projects/lemin/src/lists.c">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/Users/azavrazh/projects/lemin/src/move.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/Users/azavrazh/projects/lemin/src/path.c">
 			<Option target="lemin"/>
 		</Unit>

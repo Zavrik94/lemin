@@ -32,6 +32,8 @@ typedef struct		s_room
 {
 	char			*name;
 	int             path;
+	int             ant;
+	int             curant;
 	t_coo			coord;
 	struct s_room	**conn;
 	struct s_room	*next;
@@ -60,5 +62,6 @@ void                pars_con();
 t_con				*headofcon(t_con *list);
 t_room				*headofroom(t_room *list);
 void                path(t_room *start, t_room *end);
+void                move();
 
 #endif

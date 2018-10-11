@@ -15,6 +15,7 @@ int		main(int ac, char **av)
 	ft_read(fd);
 	pars_con();
 	path(g_ants.start, g_ants.end);
+	move();
 	//system("leaks a.out");
 	return (0);
 }

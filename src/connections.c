@@ -61,7 +61,6 @@ void    addcontorom(char *name, t_con *head)
 	if (con == 0)
 		return ;
 	g_ants.rhead->conn = (t_room**)malloc(sizeof(t_room*) * (con + 1));
-	g_ants.rhead->conn[con] = NULL;
     i = -1;
     while(head)
 	{
@@ -69,6 +68,7 @@ void    addcontorom(char *name, t_con *head)
 			g_ants.rhead->conn[++i] = findroombycon(name, head, headofroom(g_ants.rhead));
 		head = head->next;
 	}
+    g_ants.rhead->conn[con] = NULL;
     g_ants.rhead = headofroom(g_ants.rhead);
 }
 
@@ -80,9 +80,11 @@ void    pars_con(void)
         addcontorom(g_ants.room->name, g_ants.chead);
         if (!g_ants.room->next)
 			break;
+        g_ants.room->curant = 0;
+        g_ants.room->path = 0;
+        g_ants.room->ant = 0;
         g_ants.room = g_ants.room->next;
 		g_ants.chead = headofcon(g_ants.chead);
-		g_ants.room->path = 0;
     }
 }
 

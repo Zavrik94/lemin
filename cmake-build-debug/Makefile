@@ -2364,6 +2364,33 @@ src/lists.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/lists.c.s
 .PHONY : src/lists.c.s
 
+src/move.o: src/move.c.o
+
+.PHONY : src/move.o
+
+# target to build an object file
+src/move.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/move.c.o
+.PHONY : src/move.c.o
+
+src/move.i: src/move.c.i
+
+.PHONY : src/move.i
+
+# target to preprocess a source file
+src/move.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/move.c.i
+.PHONY : src/move.c.i
+
+src/move.s: src/move.c.s
+
+.PHONY : src/move.s
+
+# target to generate assembly for a file
+src/move.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/move.c.s
+.PHONY : src/move.c.s
+
 src/path.o: src/path.c.o
 
 .PHONY : src/path.o
@@ -2676,6 +2703,9 @@ help:
 	@echo "... src/lists.o"
 	@echo "... src/lists.i"
 	@echo "... src/lists.s"
+	@echo "... src/move.o"
+	@echo "... src/move.i"
+	@echo "... src/move.s"
 	@echo "... src/path.o"
 	@echo "... src/path.i"
 	@echo "... src/path.s"
