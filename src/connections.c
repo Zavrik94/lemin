@@ -31,7 +31,7 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 	else
 	{
 		ft_bzero(name2, ft_strlen(name2));
-		name2 = ft_strncpy(name2, con->name, i);
+		name2 = ft_strncpy(con->name, i);
 	}
 	while(head)
 	{
@@ -41,6 +41,22 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 	}
 	ft_strdel(&name2);
 	return (head);
+}
+
+void	print_end(t_room *room)
+{
+	int i;
+
+	i = 0;
+	if (room != g_ants.end)
+		return;
+	while (g_ants.end->conn[i])
+		i++;
+	if (i == 0)
+		ft_printf("conn NULL\n");
+	else
+		ft_printf("conn not NULL\n");
+
 }
 
 void    addcontorom(char *name, t_con *head)
@@ -78,13 +94,14 @@ void    pars_con(void)
     while(g_ants.room)
     {
         addcontorom(g_ants.room->name, g_ants.chead);
-        if (!g_ants.room->next)
-			break;
         g_ants.room->curant = 0;
         g_ants.room->path = 0;
         g_ants.room->ant = 0;
-        g_ants.room = g_ants.room->next;
+        g_ants.room->onway = 0;
 		g_ants.chead = headofcon(g_ants.chead);
+		if (!g_ants.room->next)
+			break;
+        g_ants.room = g_ants.room->next;
     }
 }
 

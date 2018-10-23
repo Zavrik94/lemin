@@ -263,3 +263,8 @@ CMakeFiles/lemin.dir/src/read.c.o
  ../ft_printf/libft/libft.h
  ../header/lemin.h
  /Users/azavrazh/projects/lemin/src/read.c
+CMakeFiles/lemin.dir/src/way.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/way.c

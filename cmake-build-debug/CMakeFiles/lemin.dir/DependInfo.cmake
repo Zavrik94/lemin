@@ -90,6 +90,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/azavrazh/projects/lemin/src/move.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/move.c.o"
   "/Users/azavrazh/projects/lemin/src/path.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/path.c.o"
   "/Users/azavrazh/projects/lemin/src/read.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/read.c.o"
+  "/Users/azavrazh/projects/lemin/src/way.c" "/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles/lemin.dir/src/way.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -34,6 +34,7 @@ typedef struct		s_room
 	int             path;
 	int             ant;
 	int             curant;
+	int             onway;
 	t_coo			coord;
 	struct s_room	**conn;
 	struct s_room	*next;
@@ -44,6 +45,7 @@ typedef struct		s_room
 typedef struct		s_lemin
 {
 	int				antcnt;
+	int             numofways;
 	t_room			*room;
 	t_room          *rhead;
 	t_con        	*conn;
@@ -63,5 +65,7 @@ t_con				*headofcon(t_con *list);
 t_room				*headofroom(t_room *list);
 void                path(t_room *start, t_room *end);
 void                move();
+t_room              *findbestway(t_room *room);
+void                ways();
 
 #endif

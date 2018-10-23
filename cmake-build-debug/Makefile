@@ -2445,6 +2445,33 @@ src/read.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/read.c.s
 .PHONY : src/read.c.s
 
+src/way.o: src/way.c.o
+
+.PHONY : src/way.o
+
+# target to build an object file
+src/way.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/way.c.o
+.PHONY : src/way.c.o
+
+src/way.i: src/way.c.i
+
+.PHONY : src/way.i
+
+# target to preprocess a source file
+src/way.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/way.c.i
+.PHONY : src/way.c.i
+
+src/way.s: src/way.c.s
+
+.PHONY : src/way.s
+
+# target to generate assembly for a file
+src/way.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/way.c.s
+.PHONY : src/way.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2712,6 +2739,9 @@ help:
 	@echo "... src/read.o"
 	@echo "... src/read.i"
 	@echo "... src/read.s"
+	@echo "... src/way.o"
+	@echo "... src/way.i"
+	@echo "... src/way.s"
 .PHONY : help
 
 

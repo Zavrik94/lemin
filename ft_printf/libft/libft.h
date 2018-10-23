@@ -40,7 +40,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-char				*ft_strncpy(char *dst, const char *src, size_t len);
+char				*ft_strncpy(const char *src, size_t len);
 size_t				ft_strlen(const char *str);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);

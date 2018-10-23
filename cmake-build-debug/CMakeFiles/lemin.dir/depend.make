@@ -263,3 +263,8 @@ CMakeFiles/lemin.dir/src/read.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/src/read.c.o: ../header/lemin.h
 CMakeFiles/lemin.dir/src/read.c.o: ../src/read.c
 
+CMakeFiles/lemin.dir/src/way.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/way.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/way.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/way.c.o: ../src/way.c
+
