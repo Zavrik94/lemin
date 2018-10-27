@@ -1,22 +1,16 @@
 #include <lemin.h>
 
-int		main(int ac, char **av)
+int		main(int ac, const char **av)
 {
-	int		fd;
+	const int		fd = iterate_flags(ac, av);
 
-	if (ac > 2)
-		return (0);
-	else if (ac < 2)
-		fd = 0;
-	else
-		fd = open(av[1], O_RDONLY);
-	if (fd < 0)
-	    return (0);
+	if (fd == -1)
+		ft_error("Can not open file");
 	ft_read(fd);
+	print_map();
 	pars_con();
 	path(g_ants.start, g_ants.end);
 	ways();
     move();
-	//system("leaks a.out");
 	return (0);
 }

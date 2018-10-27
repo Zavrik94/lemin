@@ -1188,6 +1188,58 @@ CMakeFiles/lemin.dir/src/way.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/src/way.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/azavrazh/projects/lemin/src/way.c -o CMakeFiles/lemin.dir/src/way.c.s
 
+CMakeFiles/lemin.dir/src/check.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/src/check.c.o: ../src/check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/lemin.dir/src/check.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/src/check.c.o   -c /Users/azavrazh/projects/lemin/src/check.c
+
+CMakeFiles/lemin.dir/src/check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/src/check.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/azavrazh/projects/lemin/src/check.c > CMakeFiles/lemin.dir/src/check.c.i
+
+CMakeFiles/lemin.dir/src/check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/src/check.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/azavrazh/projects/lemin/src/check.c -o CMakeFiles/lemin.dir/src/check.c.s
+
+CMakeFiles/lemin.dir/src/error.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/src/error.c.o: ../src/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/lemin.dir/src/error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/src/error.c.o   -c /Users/azavrazh/projects/lemin/src/error.c
+
+CMakeFiles/lemin.dir/src/error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/src/error.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/azavrazh/projects/lemin/src/error.c > CMakeFiles/lemin.dir/src/error.c.i
+
+CMakeFiles/lemin.dir/src/error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/src/error.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/azavrazh/projects/lemin/src/error.c -o CMakeFiles/lemin.dir/src/error.c.s
+
+CMakeFiles/lemin.dir/src/print.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/src/print.c.o: ../src/print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/lemin.dir/src/print.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/src/print.c.o   -c /Users/azavrazh/projects/lemin/src/print.c
+
+CMakeFiles/lemin.dir/src/print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/src/print.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/azavrazh/projects/lemin/src/print.c > CMakeFiles/lemin.dir/src/print.c.i
+
+CMakeFiles/lemin.dir/src/print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/src/print.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/azavrazh/projects/lemin/src/print.c -o CMakeFiles/lemin.dir/src/print.c.s
+
+CMakeFiles/lemin.dir/src/flags.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/src/flags.c.o: ../src/flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/lemin.dir/src/flags.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/src/flags.c.o   -c /Users/azavrazh/projects/lemin/src/flags.c
+
+CMakeFiles/lemin.dir/src/flags.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/src/flags.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/azavrazh/projects/lemin/src/flags.c > CMakeFiles/lemin.dir/src/flags.c.i
+
+CMakeFiles/lemin.dir/src/flags.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/src/flags.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/azavrazh/projects/lemin/src/flags.c -o CMakeFiles/lemin.dir/src/flags.c.s
+
 # Object files for target lemin
 lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/ft_printf/libft/ft_atoi.c.o" \
@@ -1276,7 +1328,11 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/src/connections.c.o" \
 "CMakeFiles/lemin.dir/src/path.c.o" \
 "CMakeFiles/lemin.dir/src/move.c.o" \
-"CMakeFiles/lemin.dir/src/way.c.o"
+"CMakeFiles/lemin.dir/src/way.c.o" \
+"CMakeFiles/lemin.dir/src/check.c.o" \
+"CMakeFiles/lemin.dir/src/error.c.o" \
+"CMakeFiles/lemin.dir/src/print.c.o" \
+"CMakeFiles/lemin.dir/src/flags.c.o"
 
 # External object files for target lemin
 lemin_EXTERNAL_OBJECTS =
@@ -1368,9 +1424,13 @@ lemin: CMakeFiles/lemin.dir/src/connections.c.o
 lemin: CMakeFiles/lemin.dir/src/path.c.o
 lemin: CMakeFiles/lemin.dir/src/move.c.o
 lemin: CMakeFiles/lemin.dir/src/way.c.o
+lemin: CMakeFiles/lemin.dir/src/check.c.o
+lemin: CMakeFiles/lemin.dir/src/error.c.o
+lemin: CMakeFiles/lemin.dir/src/print.c.o
+lemin: CMakeFiles/lemin.dir/src/flags.c.o
 lemin: CMakeFiles/lemin.dir/build.make
 lemin: CMakeFiles/lemin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable lemin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/azavrazh/projects/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking C executable lemin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lemin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

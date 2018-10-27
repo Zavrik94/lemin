@@ -14,12 +14,7 @@
 #define LEM_IN
 
 #include "../ft_printf/includes/ft_printf.h"
-
-typedef struct		s_coo
-{
-	int				x;
-	int				y;
-}					t_coo;
+#include <stdio.h>
 
 typedef struct		s_con
 {
@@ -31,16 +26,36 @@ typedef struct		s_con
 typedef struct		s_room
 {
 	char			*name;
+	int 			x;
+	int 			y;
 	int             path;
 	int             ant;
 	int             curant;
 	int             onway;
-	t_coo			coord;
 	struct s_room	**conn;
 	struct s_room	*next;
 	struct s_room	*prev;
 }					t_room;
 
+typedef	struct 		s_lflags
+{
+	unsigned int	steps : 1;
+	unsigned int	silent : 1;
+	unsigned int	solo : 1;
+	unsigned int	ways : 1;
+	unsigned int	help : 1;
+	unsigned int	is_start : 1;
+	unsigned int	is_end : 1;
+
+}					t_fl;
+
+typedef	struct 		s_lines
+{
+	char 			*str;
+	struct s_lines	*prev;
+	struct s_lines	*next;
+
+}					t_ln;
 
 typedef struct		s_lemin
 {
@@ -52,14 +67,17 @@ typedef struct		s_lemin
 	t_con			*chead;
 	t_room          *start;
 	t_room          *end;
+	int 			cntendant;
+	t_fl			flags;
+	t_ln			*output;
+	t_ln			*output_start;
+
 }					t_lemin;
 
 
 t_lemin g_ants;
 
 void				ft_read(int fd);
-void				*freelastconn(t_files *head);
-t_files     		*findinconn(t_files *head, char *str);
 void                pars_con();
 t_con				*headofcon(t_con *list);
 t_room				*headofroom(t_room *list);
@@ -67,5 +85,18 @@ void                path(t_room *start, t_room *end);
 void                move();
 t_room              *findbestway(t_room *room);
 void                ways();
+void                check_con(char *str);
+t_room	            *findroombyname(char *name);
+int                 check_room(char *str);
+void				ft_error(char *err);
+int 				check_coord(int	x, int y, char *name);
+t_room				*findroombycon(char* name, t_con *con, t_room *head);
+int 				havethisconn(char *roomname, t_con *conn);
+void				delaftersplit(char ***arr);
+void				print_map();
+int					iterate_flags(int ac, const char **av);
+bool				parse_flags(const char *str);
+bool				parse_flags2(const char *str);
+
 
 #endif

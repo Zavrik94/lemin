@@ -19,7 +19,7 @@ char	*ft_strncpy(const char *src, size_t n)
 	size_t			i;
 
 	i = 0;
-	s = src;
+	s = (char*)src;
 	d = (char*)malloc(sizeof(char) * n);
 	while (s[i] && i < n)
 	{

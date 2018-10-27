@@ -180,8 +180,10 @@ CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strscpy.c
  /Users/azavrazh/projects/lemin/ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o
+ /Users/azavrazh/projects/lemin/ft_printf/includes/ft_printf.h
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strsplit.c
  /Users/azavrazh/projects/lemin/ft_printf/libft/libft.h
+ /Users/azavrazh/projects/lemin/header/lemin.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strstr.c.o
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strstr.c
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsub.c.o
@@ -233,11 +235,26 @@ CMakeFiles/lemin.dir/ft_printf/src/print_the_bit.c.o
  ../ft_printf/includes/ft_printf.h
  ../ft_printf/libft/libft.h
  /Users/azavrazh/projects/lemin/ft_printf/src/print_the_bit.c
+CMakeFiles/lemin.dir/src/check.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/check.c
 CMakeFiles/lemin.dir/src/connections.c.o
  ../ft_printf/includes/ft_printf.h
  ../ft_printf/libft/libft.h
  ../header/lemin.h
  /Users/azavrazh/projects/lemin/src/connections.c
+CMakeFiles/lemin.dir/src/error.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/error.c
+CMakeFiles/lemin.dir/src/flags.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/flags.c
 CMakeFiles/lemin.dir/src/lemin.c.o
  ../ft_printf/includes/ft_printf.h
  ../ft_printf/libft/libft.h
@@ -258,6 +275,11 @@ CMakeFiles/lemin.dir/src/path.c.o
  ../ft_printf/libft/libft.h
  ../header/lemin.h
  /Users/azavrazh/projects/lemin/src/path.c
+CMakeFiles/lemin.dir/src/print.c.o
+ ../ft_printf/includes/ft_printf.h
+ ../ft_printf/libft/libft.h
+ ../header/lemin.h
+ /Users/azavrazh/projects/lemin/src/print.c
 CMakeFiles/lemin.dir/src/read.c.o
  ../ft_printf/includes/ft_printf.h
  ../ft_printf/libft/libft.h

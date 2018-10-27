@@ -86,6 +86,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/src/path.c.o"
   "CMakeFiles/lemin.dir/src/move.c.o"
   "CMakeFiles/lemin.dir/src/way.c.o"
+  "CMakeFiles/lemin.dir/src/check.c.o"
+  "CMakeFiles/lemin.dir/src/error.c.o"
+  "CMakeFiles/lemin.dir/src/print.c.o"
+  "CMakeFiles/lemin.dir/src/flags.c.o"
   "lemin.pdb"
   "lemin"
 )

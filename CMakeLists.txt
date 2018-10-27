@@ -95,4 +95,4 @@ add_executable(lemin
         src/lemin.c
         src/read.c
         Makefile
-        test src/lists.c src/connections.c src/path.c src/move.c src/way.c)
+        test src/lists.c src/connections.c src/path.c src/move.c src/way.c src/check.c src/error.c src/print.c src/flags.c)

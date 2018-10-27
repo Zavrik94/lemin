@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "../../header/lemin.h"
 
 static int		countalf(char *s, char ch, int i)
 {
@@ -19,7 +20,7 @@ static int		countalf(char *s, char ch, int i)
 	c = 0;
 	if (!s)
 		return (0);
-	while (s[i] != ch)
+	while (s[i] && s[i] != ch)
 	{
 		c++;
 		i++;
@@ -97,5 +98,6 @@ char			**ft_strsplit(const char *s, char ch)
 			rch[c++] = ft_write((char *)s, i, res[c1]);
 	}
 	rch[c] = 0;
+	free (res);
 	return (rch);
 }

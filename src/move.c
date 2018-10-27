@@ -32,67 +32,91 @@ t_room  *findprevonway(t_room *room, int num)
     return (temp);
 }
 
-char    *outstr(int ant, char *name)
+int     minpath()
 {
-    char    *tmp;
+    t_room  *start;
+    int     i;
+    int     min;
 
-    tmp = "\0";
-    tmp = ft_strjoin(tmp, "L");
-    tmp = ft_strjoin(tmp, ft_itoa(ant));
-    tmp = ft_strjoin(tmp, "-");
-    tmp = ft_strjoin(tmp, name);
-    tmp = ft_strjoin(tmp, " ");
-    return tmp;
+    start = g_ants.start;
+    min = 0;
+    i = -1;
+    while (start->conn[++i])
+    {
+        if (min == 0)
+            min = start->conn[i]->path;
+        else if (min != 0 && start->conn[i]->path < min)
+            min = start->conn[i]->path;
+    }
+    return (min);
 }
 
-void    moveonway(int num)
+int     curpath(int num)
 {
-    t_room *end;
-    t_room *prev;
-    char    *tmp;
+    t_room  *start;
+    int     i;
+
+    start = g_ants.start;
+    i = -1;
+    while (start->conn[++i])
+        if (start->conn[i]->onway == num)
+            break;
+    return (start->conn[i]->path);
+}
+
+void    moveonway(int num, int  numofsteps)
+{
+    t_room  *end;
+    t_room  *prev;
+    int     k;
 
     end = g_ants.end;
-    tmp = "\0";
     while (end != g_ants.start)
     {
         prev = findprevonway(end, num);
         if (prev->ant > 0)
         {
+            if (end == g_ants.end)
+                g_ants.cntendant++;
             end->ant = prev->ant;
             if (prev == g_ants.start)
             {
-                prev->ant++;
-                if (prev->ant > g_ants.antcnt)
-                    prev->ant = 0;
+                k = curpath(num)/minpath();
+                if (((numofsteps + (k - 1)) % k == 0) && (curpath(num) < (g_ants.antcnt - prev->ant) || curpath(num) == minpath()))
+                {
+                    prev->ant++;
+                    if (prev->ant > g_ants.antcnt)
+                        prev->ant = 0;
+                }
+                else
+                {
+                    end->ant = 0;
+                }
             }
             else
                 prev->ant = 0;
-            ft_printf("L%d-%s ", end->ant, end->name);
-
-            /*if (tmp == "\0")
-                tmp = ft_strjoin(outstr(end->ant, end->name), tmp);
-            else
-                tmp = ft_strjoin(outstr(end->ant, end->name), tmp);*/
+            if (end->ant != 0)
+                ft_printf("L%d-%s ", end->ant, end->name);
         }
         end = prev;
     }
-    //ft_printf("%s", tmp);
 }
 
 void    move(void)
-    {
-    t_room *curroom;
-    t_room *nextroom;
-    t_room *head;
-    int     curant;
+{
     int     i;
+    int     numofsteps;
 
     g_ants.start->ant = 1;
-    while (g_ants.end->ant != g_ants.antcnt)
+    numofsteps = 1;
+    g_ants.cntendant = 0;
+    while (g_ants.cntendant != g_ants.antcnt)
     {
         i = 0;
         while (++i <= g_ants.numofways)
-            moveonway(i);
+            moveonway(i, numofsteps);
         ft_printf("\n");
+        numofsteps++;
     }
+    ft_printf("%d\n", numofsteps);
 }

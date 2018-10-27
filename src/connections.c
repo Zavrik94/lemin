@@ -2,10 +2,10 @@
 
 int     countconnroom(char  *name, t_con *head)
 {
-    int     res;
+    int		res;
 
     res = 0;
-    while(head)
+    while (head)
     {
         if (ft_strstr(head->name, name))
             res++;
@@ -21,7 +21,7 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 
 	name2 = ft_strjoin(name, "-");
 	i = 0;
-	while(con->name[i] != '-')
+	while (con->name[i] != '-')
 		i++;
 	if (ft_strstr(con->name, name2))
 	{
@@ -30,10 +30,10 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 	}
 	else
 	{
-		ft_bzero(name2, ft_strlen(name2));
+		ft_strdel(&name2);
 		name2 = ft_strncpy(con->name, i);
 	}
-	while(head)
+	while (head)
 	{
 		if(ft_strcmp(head->name, name2) == 0)
 			break;
@@ -43,29 +43,12 @@ t_room	*findroombycon(char* name, t_con *con, t_room *head)
 	return (head);
 }
 
-void	print_end(t_room *room)
-{
-	int i;
-
-	i = 0;
-	if (room != g_ants.end)
-		return;
-	while (g_ants.end->conn[i])
-		i++;
-	if (i == 0)
-		ft_printf("conn NULL\n");
-	else
-		ft_printf("conn not NULL\n");
-
-}
-
 void    addcontorom(char *name, t_con *head)
 {
-    int     i;
-    int    con;
+    int		i;
+    int		con;
 
-	con = 0;
-    while(g_ants.rhead)
+    while (g_ants.rhead)
     {
         if (!ft_strcmp(g_ants.rhead->name, name))
             break;
@@ -75,12 +58,14 @@ void    addcontorom(char *name, t_con *head)
         return ;
 	con = countconnroom(g_ants.rhead->name, g_ants.chead);
 	if (con == 0)
-		return ;
+		ft_error("Room with no connections");
 	g_ants.rhead->conn = (t_room**)malloc(sizeof(t_room*) * (con + 1));
     i = -1;
-    while(head)
+    while (head)
 	{
-		if (ft_strstr(head->name, name))
+    	if (ft_strstr(head->name, name) && havethisconn(name, head))
+    		con--;
+		else if (ft_strstr(head->name, name) && !havethisconn(name, head))
 			g_ants.rhead->conn[++i] = findroombycon(name, head, headofroom(g_ants.rhead));
 		head = head->next;
 	}
@@ -91,7 +76,7 @@ void    addcontorom(char *name, t_con *head)
 void    pars_con(void)
 {
     g_ants.room = headofroom(g_ants.room);
-    while(g_ants.room)
+    while (g_ants.room)
     {
         addcontorom(g_ants.room->name, g_ants.chead);
         g_ants.room->curant = 0;

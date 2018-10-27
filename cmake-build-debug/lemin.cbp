@@ -341,7 +341,16 @@
 		<Unit filename="/Users/azavrazh/projects/lemin/header/lemin.h">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/Users/azavrazh/projects/lemin/src/check.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/Users/azavrazh/projects/lemin/src/connections.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/Users/azavrazh/projects/lemin/src/error.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/Users/azavrazh/projects/lemin/src/flags.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/azavrazh/projects/lemin/src/lemin.c">
@@ -354,6 +363,9 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/azavrazh/projects/lemin/src/path.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/Users/azavrazh/projects/lemin/src/print.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/azavrazh/projects/lemin/src/read.c">

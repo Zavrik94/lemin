@@ -1,31 +1,20 @@
 #include <lemin.h>
 
-void *freelastconn(t_files *head)
+t_room	*findroombyname(char *name)
 {
-	while(head)
+	t_room	*head;
+
+	head = headofroom(g_ants.rhead);
+	while (head)
 	{
-		if (ft_strcmp(head->temp, "\0") == 0)
+		if (head->name != NULL && !ft_strcmp(head->name, name))
 			return (head);
 		head = head->next;
 	}
 	return (NULL);
 }
-
-t_files     *findinconn(t_files *head, char *str)
-{
-    while(head)
-    {
-        if (ft_strcmp(head->temp, str))
-            return (head);
-        head = head->next;
-    }
-    return (NULL);
-}
-
 t_room	*headofroom(t_room *list)
 {
-	void	*tmp;
-
 	while (list->prev)
 		list = list->prev;
 	return(list);
@@ -33,8 +22,6 @@ t_room	*headofroom(t_room *list)
 
 t_con	*headofcon(t_con *list)
 {
-	void	*tmp;
-
 	while (list->prev)
 		list = list->prev;
 	return(list);

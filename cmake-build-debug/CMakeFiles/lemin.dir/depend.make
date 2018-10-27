@@ -179,8 +179,10 @@ CMakeFiles/lemin.dir/ft_printf/libft/ft_strrev.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../ft_printf/libft/ft_strscpy.c
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../ft_printf/libft/libft.h
 
+CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/libft/ft_strsplit.c
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../header/lemin.h
 
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strstr.c.o: ../ft_printf/libft/ft_strstr.c
 
@@ -233,10 +235,25 @@ CMakeFiles/lemin.dir/ft_printf/src/print_the_bit.c.o: ../ft_printf/includes/ft_p
 CMakeFiles/lemin.dir/ft_printf/src/print_the_bit.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/ft_printf/src/print_the_bit.c.o: ../ft_printf/src/print_the_bit.c
 
+CMakeFiles/lemin.dir/src/check.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/check.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/check.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/check.c.o: ../src/check.c
+
 CMakeFiles/lemin.dir/src/connections.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/src/connections.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/src/connections.c.o: ../header/lemin.h
 CMakeFiles/lemin.dir/src/connections.c.o: ../src/connections.c
+
+CMakeFiles/lemin.dir/src/error.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/error.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/error.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/error.c.o: ../src/error.c
+
+CMakeFiles/lemin.dir/src/flags.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/flags.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/flags.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/flags.c.o: ../src/flags.c
 
 CMakeFiles/lemin.dir/src/lemin.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/src/lemin.c.o: ../ft_printf/libft/libft.h
@@ -257,6 +274,11 @@ CMakeFiles/lemin.dir/src/path.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/src/path.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/src/path.c.o: ../header/lemin.h
 CMakeFiles/lemin.dir/src/path.c.o: ../src/path.c
+
+CMakeFiles/lemin.dir/src/print.c.o: ../ft_printf/includes/ft_printf.h
+CMakeFiles/lemin.dir/src/print.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/src/print.c.o: ../header/lemin.h
+CMakeFiles/lemin.dir/src/print.c.o: ../src/print.c
 
 CMakeFiles/lemin.dir/src/read.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/src/read.c.o: ../ft_printf/libft/libft.h

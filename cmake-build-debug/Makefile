@@ -2283,6 +2283,33 @@ ft_printf/src/print_the_bit.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/ft_printf/src/print_the_bit.c.s
 .PHONY : ft_printf/src/print_the_bit.c.s
 
+src/check.o: src/check.c.o
+
+.PHONY : src/check.o
+
+# target to build an object file
+src/check.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/check.c.o
+.PHONY : src/check.c.o
+
+src/check.i: src/check.c.i
+
+.PHONY : src/check.i
+
+# target to preprocess a source file
+src/check.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/check.c.i
+.PHONY : src/check.c.i
+
+src/check.s: src/check.c.s
+
+.PHONY : src/check.s
+
+# target to generate assembly for a file
+src/check.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/check.c.s
+.PHONY : src/check.c.s
+
 src/connections.o: src/connections.c.o
 
 .PHONY : src/connections.o
@@ -2309,6 +2336,60 @@ src/connections.s: src/connections.c.s
 src/connections.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/connections.c.s
 .PHONY : src/connections.c.s
+
+src/error.o: src/error.c.o
+
+.PHONY : src/error.o
+
+# target to build an object file
+src/error.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/error.c.o
+.PHONY : src/error.c.o
+
+src/error.i: src/error.c.i
+
+.PHONY : src/error.i
+
+# target to preprocess a source file
+src/error.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/error.c.i
+.PHONY : src/error.c.i
+
+src/error.s: src/error.c.s
+
+.PHONY : src/error.s
+
+# target to generate assembly for a file
+src/error.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/error.c.s
+.PHONY : src/error.c.s
+
+src/flags.o: src/flags.c.o
+
+.PHONY : src/flags.o
+
+# target to build an object file
+src/flags.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/flags.c.o
+.PHONY : src/flags.c.o
+
+src/flags.i: src/flags.c.i
+
+.PHONY : src/flags.i
+
+# target to preprocess a source file
+src/flags.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/flags.c.i
+.PHONY : src/flags.c.i
+
+src/flags.s: src/flags.c.s
+
+.PHONY : src/flags.s
+
+# target to generate assembly for a file
+src/flags.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/flags.c.s
+.PHONY : src/flags.c.s
 
 src/lemin.o: src/lemin.c.o
 
@@ -2417,6 +2498,33 @@ src/path.s: src/path.c.s
 src/path.c.s:
 	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/path.c.s
 .PHONY : src/path.c.s
+
+src/print.o: src/print.c.o
+
+.PHONY : src/print.o
+
+# target to build an object file
+src/print.c.o:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/print.c.o
+.PHONY : src/print.c.o
+
+src/print.i: src/print.c.i
+
+.PHONY : src/print.i
+
+# target to preprocess a source file
+src/print.c.i:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/print.c.i
+.PHONY : src/print.c.i
+
+src/print.s: src/print.c.s
+
+.PHONY : src/print.s
+
+# target to generate assembly for a file
+src/print.c.s:
+	$(MAKE) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/src/print.c.s
+.PHONY : src/print.c.s
 
 src/read.o: src/read.c.o
 
@@ -2721,9 +2829,18 @@ help:
 	@echo "... ft_printf/src/print_the_bit.o"
 	@echo "... ft_printf/src/print_the_bit.i"
 	@echo "... ft_printf/src/print_the_bit.s"
+	@echo "... src/check.o"
+	@echo "... src/check.i"
+	@echo "... src/check.s"
 	@echo "... src/connections.o"
 	@echo "... src/connections.i"
 	@echo "... src/connections.s"
+	@echo "... src/error.o"
+	@echo "... src/error.i"
+	@echo "... src/error.s"
+	@echo "... src/flags.o"
+	@echo "... src/flags.i"
+	@echo "... src/flags.s"
 	@echo "... src/lemin.o"
 	@echo "... src/lemin.i"
 	@echo "... src/lemin.s"
@@ -2736,6 +2853,9 @@ help:
 	@echo "... src/path.o"
 	@echo "... src/path.i"
 	@echo "... src/path.s"
+	@echo "... src/print.o"
+	@echo "... src/print.i"
+	@echo "... src/print.s"
 	@echo "... src/read.o"
 	@echo "... src/read.i"
 	@echo "... src/read.s"

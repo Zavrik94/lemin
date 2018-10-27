@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME := a.out
+NAME := lem-in
 
 SRC_D := src/
 LIBFT_D := ft_printf/
@@ -19,10 +19,10 @@ INC_D := header/
 OBJ_D := .obj/
 
 CC := clang
-CFLAGS := -g #-Wall -Wextra -Werror
+CFLAGS := -g -Wall -Wextra -Werror
 IFLAGS := -I $(INC_D)
 
-SRC := lemin read connections path lists move way
+SRC := lemin read connections path lists move way check error print flags
 HFILES := $(INC_D)lemin.h
 
 SRCS := $(addprefix $(SRC_D), $(addsuffix .c, $(SRC)))
