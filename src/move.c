@@ -96,7 +96,7 @@ void    moveonway(int num, int  numofsteps)
             else
                 prev->ant = 0;
             if (end->ant != 0)
-                ft_printf("L%d-%s ", end->ant, end->name);
+				ft_printf("L%d-%s ", end->ant, end->name);
         }
         end = prev;
     }
@@ -110,13 +110,25 @@ void    move(void)
     g_ants.start->ant = 1;
     numofsteps = 1;
     g_ants.cntendant = 0;
-    while (g_ants.cntendant != g_ants.antcnt)
+    while (g_ants.cntendant < g_ants.antcnt)
     {
-        i = 0;
-        while (++i <= g_ants.numofways)
-            moveonway(i, numofsteps);
+    	if (g_ants.flags.start_end)
+    	{
+			while (g_ants.cntendant < g_ants.antcnt)
+				moveonway(findbestways(), numofsteps);
+			ft_printf("\n");
+			break;
+		}
+    	if (g_ants.flags.solo)
+    		moveonway(findbestways(), numofsteps);
+    	else if ((i = 1) > 0)
+    	{
+			while (i <= g_ants.numofways)
+				moveonway(i++, numofsteps);
+		}
         ft_printf("\n");
         numofsteps++;
     }
-    ft_printf("%d\n", numofsteps);
+    if (g_ants.flags.steps)
+        ft_printf("steps : %d\n", numofsteps);
 }

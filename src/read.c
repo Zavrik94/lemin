@@ -4,7 +4,7 @@ void	init_deinit(bool indeinit, int cnt)
 {
 	if (indeinit)
 	{
-		ft_bzero(&g_ants, sizeof(t_lemin));
+		//ft_bzero(&g_ants, sizeof(t_lemin));
 		g_ants.conn = (t_con*)ft_memalloc(sizeof(t_con));
 		g_ants.chead = g_ants.conn;
 		g_ants.room = (t_room*)ft_memalloc(sizeof(t_room));
@@ -21,10 +21,12 @@ void	init_deinit(bool indeinit, int cnt)
 		if (g_ants.start == NULL || g_ants.end == NULL)
 			ft_error("Don`t have start or end");
 		g_ants.room = g_ants.room->prev;
-		free(g_ants.room->next);
+		if (g_ants.room->next)
+			free(g_ants.room->next);
 		g_ants.room->next = NULL;
 		g_ants.conn = g_ants.conn->prev;
-		free(g_ants.conn->next);
+		if (g_ants.conn == NULL)
+			ft_error("No connections");
 		g_ants.conn->next = NULL;
 	}
 }
@@ -93,7 +95,7 @@ void	ft_read(int fd)
 			continue ;
 		else if (cnt == 0 && ft_isnum(line))
 			(g_ants.antcnt = ft_atoi(line)) && ++cnt;
-		else if (g_ants.antcnt < 0)
+		else if (g_ants.antcnt <= 0)
 			ft_error("Error to read ants");
 		else if (ft_isalnum(line[0]) && ft_strstr(line, "-") && ft_strstr(line, " "))
 			ft_error("Error input format");

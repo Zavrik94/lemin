@@ -7,14 +7,15 @@ int			iterate_flags(int ac, const char **av)
 	int 	i;
 
 	i = 0;
-	while (++i < ac && ft_strstr("-", av[i]))
+	while (++i < ac)
 	{
-		if (parse_flags(av[i]) == false)
-			break ;
+		if (ft_strstr(av[i], "-"))
+			if (parse_flags(av[i]) == false)
+				break ;
 	}
-	if (i > ac - 1)
+	if (i > ac)
 		return (0);
-	if (!(fd = open(av[i], O_RDONLY)))
+	if (!(fd = open(av[--i], O_RDONLY)))
 		return (-1);
 	return (fd);
 }
@@ -53,4 +54,24 @@ bool	parse_flags2(const char *str)
 	else if (str[0] == '#')
 		return (true);
 	return (false);
+}
+
+int 	findbestways()
+{
+	int 	i = -1;
+	int 	min = 0;
+	int 	numofway;
+
+	while (g_ants.start->conn[++i])
+		if (min == 0)
+		{
+			numofway = g_ants.start->conn[i]->onway;
+			min = g_ants.start->conn[i]->path;
+		}
+		else if (g_ants.start->conn[i]->path < min)
+		{
+			numofway = g_ants.start->conn[i]->onway;
+			min = g_ants.start->conn[i]->path;
+		}
+	return (numofway);
 }

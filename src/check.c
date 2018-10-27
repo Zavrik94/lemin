@@ -17,8 +17,8 @@ int     check_room(char *str)
     i = 0;
     while (chk[i])
         i++;
-    if (i != 3 && (!ft_isnum(chk[1]) || !ft_isnum(chk[2]))
-        && (chk[0][0] == 'L' || chk[0][0] == '#'))
+    if (i != 3 || (!ft_isnum(chk[1]) || !ft_isnum(chk[2]))
+        || (chk[0][0] == 'L' || chk[0][0] == '#'))
     {
     	delaftersplit(&chk);
 		return (0);

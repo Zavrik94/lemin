@@ -46,6 +46,7 @@ typedef	struct 		s_lflags
 	unsigned int	help : 1;
 	unsigned int	is_start : 1;
 	unsigned int	is_end : 1;
+	unsigned int	start_end : 1;
 
 }					t_fl;
 
@@ -97,6 +98,8 @@ void				print_map();
 int					iterate_flags(int ac, const char **av);
 bool				parse_flags(const char *str);
 bool				parse_flags2(const char *str);
+int 				findbestways();
+void				printways();
 
 
 #endif

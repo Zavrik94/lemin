@@ -66,7 +66,12 @@ void    addcontorom(char *name, t_con *head)
     	if (ft_strstr(head->name, name) && havethisconn(name, head))
     		con--;
 		else if (ft_strstr(head->name, name) && !havethisconn(name, head))
+		{
+
 			g_ants.rhead->conn[++i] = findroombycon(name, head, headofroom(g_ants.rhead));
+			if (g_ants.rhead == g_ants.start && g_ants.rhead->conn[i] == g_ants.end)
+				g_ants.flags.start_end = true;
+		}
 		head = head->next;
 	}
     g_ants.rhead->conn[con] = NULL;
