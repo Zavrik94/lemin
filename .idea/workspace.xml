@@ -44,7 +44,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="58" />
-          <entry key="c" value="20106" />
+          <entry key="c" value="20107" />
           <entry key="h" value="901" />
           <entry key="m" value="80" />
           <entry key="test" value="720" />
@@ -52,7 +52,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="21087" />
+          <entry key="ObjectiveC" value="21088" />
           <entry key="PLAIN_TEXT" value="778" />
         </counts>
       </usages-collector>
@@ -163,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/read.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+            <state relative-caret-position="668">
+              <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -433,12 +433,12 @@
       <workItem from="1540645279357" duration="18805000" />
       <workItem from="1540723866186" duration="74000" />
       <workItem from="1540724052507" duration="8258000" />
-      <workItem from="1540735701293" duration="8706000" />
+      <workItem from="1540735701293" duration="8778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104864000" />
+    <option name="totallyTimeSpent" value="104936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -879,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/read.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+        <state relative-caret-position="668">
+          <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
         </state>
       </provider>
     </entry>
