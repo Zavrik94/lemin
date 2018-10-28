@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 19:20:57 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 19:20:57 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 20:36:56 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,6 @@ int					findbestways();
 void				printways();
 int					countconnroom(char *name, t_con *head);
 t_room				*findprevonway(t_room *room, int num);
+void				read_ants(char *line);
 
 #endif

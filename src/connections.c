@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 16:26:58 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 21:28:21 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 21:32:28 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	addcontorom(char *name, t_con *head)
 		return ;
 	con = countconnroom(g_ants.rhead->name, g_ants.chead);
 	if (con == 0)
-		ft_error("Room with no connections");
+		return ;
 	g_ants.rhead->conn = (t_room**)malloc(sizeof(t_room*) * (con + 1));
 	g_ants.rhead->conn[0] = NULL;
 	partofadd(head, name, con);

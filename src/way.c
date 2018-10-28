@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 19:15:53 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 19:15:53 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 22:26:49 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,16 @@ t_room	*findbestway(t_room *room)
 	i = -1;
 	cnt = -1;
 	while (room->conn[++i])
+	{
+		if (room->conn[i] == g_ants.end)
+			return (room->conn[i]);
 		if (room->conn[i]->path < min && room->conn[i]->onway == 0
 			&& room->conn[i] != g_ants.start && room->conn[i]->path > 0)
 		{
 			min = room->conn[i]->path;
 			cnt = i;
 		}
+	}
 	if (cnt == -1)
 	{
 		clearthisway(room);

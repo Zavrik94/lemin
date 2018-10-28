@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 17:28:50 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 18:15:17 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 22:32:30 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,18 @@ bool	parse_flags2(const char *str)
 		return (g_ants.flags.steps = true);
 	else if (ft_strequ(str, "##help"))
 		return (ft_putstr_fd(g_usage, 2));
-	else if (ft_strequ(str, "##start"))
+	else if (ft_strequ(str, "##start") && !g_ants.flags.is_start
+	&& g_ants.start == NULL)
 		return (g_ants.flags.is_start = true);
-	else if (ft_strequ(str, "##end"))
+	else if (ft_strequ(str, "##end") && !g_ants.flags.is_start
+	&& g_ants.end == NULL)
 		return (g_ants.flags.is_end = true);
+	else if (ft_strequ(str, "##start") && ((g_ants.start == NULL
+	&& g_ants.flags.is_start) || g_ants.start != NULL))
+		ft_error("duplicate start");
+	else if (ft_strequ(str, "##end") && ((g_ants.end == NULL
+	&& g_ants.flags.is_end) || g_ants.end != NULL))
+		ft_error("duplicate end");
 	else if (str[0] == '#')
 		return (true);
 	return (false);
@@ -86,4 +94,11 @@ int		findbestways(void)
 			min = g_ants.start->conn[i]->path;
 		}
 	return (numofway);
+}
+
+void	read_ants(char *line)
+{
+	g_ants.antcnt = ft_atoi(line);
+	if (g_ants.antcnt < 1 || !ft_isnum(line))
+		ft_error("Error to read ants");
 }

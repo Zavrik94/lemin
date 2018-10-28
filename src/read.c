@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 19:13:04 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 20:35:59 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 22:34:47 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,10 +104,7 @@ void	ft_read(int fd)
 		if (parse_flags2(l))
 			continue ;
 		if (cnt == 0 && ++cnt)
-			(g_ants.antcnt = ft_atoi(l)) && g_ants.antcnt
-			<= 0 && ft_error("Error to read ants");
-		else if (ft_isalnum(l[0]) && ft_strstr(l, "-") && ft_strstr(l, " "))
-			ft_error("Error input format");
+			read_ants(l);
 		else if (ft_isalnum(l[0]) && ft_strstr(l, "-"))
 			read_conn(l);
 		else

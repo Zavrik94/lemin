@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 18:57:17 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 19:59:40 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 22:16:56 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		checkzeropath(void)
 	head = headofroom(g_ants.room);
 	while (head)
 	{
-		if (head->path == 0 && head != g_ants.start)
+		if (head->path == 0 && head != g_ants.start && head->conn != NULL)
 			return (1);
 		head = head->next;
 	}
@@ -35,7 +35,7 @@ int		haveway(void)
 	while (head)
 	{
 		i = -1;
-		if (head->path == 0)
+		if (head->path == 0 && head->conn)
 			while (head->conn[++i])
 				if (head->conn[i]->path != 0)
 					return (1);
