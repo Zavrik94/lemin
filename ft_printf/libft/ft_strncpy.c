@@ -16,7 +16,7 @@ char	*ft_strncpy(const char *src, size_t n)
 {
 	char	*d;
 	char	*s;
-	size_t			i;
+	size_t	i;
 
 	i = 0;
 	s = (char*)src;

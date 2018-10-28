@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 20:12:40 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 17:24:43 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 17:26:11 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 # include <stdbool.h>
 # include <limits.h>
 # include <sys/types.h>
-//# include <sys/uio.h>
 # define BUFF_SIZE 8
 
 typedef struct		s_files

@@ -36,7 +36,7 @@ sys/types.h
 stdio.h
 -
 
-/Users/azavrazh/projects/lemin/src/read.c
+/Users/azavrazh/projects/lemin/src/connections.c
 lemin.h
 -
 

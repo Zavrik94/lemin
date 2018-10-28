@@ -89,7 +89,7 @@ void				ways();
 void				check_con(const char *str);
 t_room				*findroombyname(char *name);
 void				check_room(const char *str);
-void				ft_error(char *err);
+bool				ft_error(char *err);
 int					check_coord(int	x, int y, char *name);
 t_room				*findroombycon(char *name, t_con *con, t_room *head);
 int					havethisconn(char *roomname, t_con *conn);

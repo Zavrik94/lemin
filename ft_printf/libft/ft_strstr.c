@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azavrazh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/07 18:37:08 by azavrazh          #+#    #+#             */
-/*   Updated: 2017/12/07 18:37:09 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 21:35:16 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	unsigned char	*d1;
 	unsigned char	*d2;
 
-	//if (!haystack || !needle || !*haystack || !*needle)
-	//	return (0);
 	d1 = (unsigned char *)haystack;
 	d2 = (unsigned char *)needle;
 	count = 0;

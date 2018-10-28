@@ -98,6 +98,6 @@ char			**ft_strsplit(const char *s, char ch)
 			rch[c++] = ft_write((char *)s, i, res[c1]);
 	}
 	rch[c] = 0;
-	free (res);
+	free(res);
 	return (rch);
 }

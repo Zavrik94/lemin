@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 17:29:54 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 17:29:54 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 20:36:19 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void		delaftersplit(char ***arr)
 	free(temp);
 }
 
-void		ft_error(char *err)
+bool		ft_error(char *err)
 {
 	if (!err)
 		ft_putstr(g_usage);

@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 16:26:58 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 18:25:35 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 21:28:21 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,29 +29,26 @@ int		countconnroom(char *name, t_con *head)
 t_room	*findroombycon(char *name, t_con *con, t_room *head)
 {
 	char	*name2;
-	int		i;
+	char	**temp;
 
-	name2 = ft_strjoin(name, "-");
-	i = 0;
-	while (con->name[i] != '-')
-		i++;
-	if (ft_strstr(con->name, name2))
+	temp = ft_strsplit(con->name, '-');
+	if ((!ft_strequ(temp[0], name) && !ft_strequ(temp[1], name))
+	|| ft_strequ(temp[1], temp[0]))
 	{
-		ft_strdel(&name2);
-		name2 = ft_strscpy(con->name, ++i);
+		delaftersplit(&temp);
+		return (NULL);
 	}
-	else
-	{
-		ft_strdel(&name2);
-		name2 = ft_strncpy(con->name, i);
-	}
+	if (ft_strequ(temp[0], name))
+		name2 = temp[1];
+	if (ft_strequ(temp[1], name))
+		name2 = temp[0];
 	while (head)
 	{
 		if (ft_strcmp(head->name, name2) == 0)
 			break ;
 		head = head->next;
 	}
-	ft_strdel(&name2);
+	delaftersplit(&temp);
 	return (head);
 }
 
@@ -68,6 +65,8 @@ void	partofadd(t_con *head, char *name, int con)
 		{
 			g_ants.rhead->conn[++i] =
 					findroombycon(name, head, headofroom(g_ants.rhead));
+			if (!g_ants.rhead->conn[i])
+				i--;
 			if (g_ants.rhead == g_ants.start
 				&& g_ants.rhead->conn[i] == g_ants.end)
 				g_ants.flags.start_end = true;
