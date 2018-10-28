@@ -14,6 +14,6 @@ int		main(int ac, const char **av)
 		print_map();
 	if (g_ants.flags.ways)
 		printways();
-    move();
+	move();
 	return (0);
 }

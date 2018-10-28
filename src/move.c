@@ -17,15 +17,12 @@ t_room  *findprevonway(t_room *room, int num)
             if (max == 0)
             {
                 temp = room->conn[i];
-                max = room->path;
+                max = room->conn[i]->path;
             }
-            else
+            else if (room->conn[i]->path > max)
             {
-                if (room->path > max)
-                {
-                    temp = room->conn[i];
-                    max = room->path;
-                }
+            	temp = room->conn[i];
+            	max = room->conn[i]->path;
             }
         }
     }
@@ -43,9 +40,9 @@ int     minpath()
     i = -1;
     while (start->conn[++i])
     {
-        if (min == 0)
+        if (min == 0 && start->conn[i]->path > 0)
             min = start->conn[i]->path;
-        else if (min != 0 && start->conn[i]->path < min)
+        else if (min != 0 && start->conn[i]->path < min && start->conn[i]->path > 0)
             min = start->conn[i]->path;
     }
     return (min);

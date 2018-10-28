@@ -48,7 +48,7 @@ void	printways()
 	{
 		start = g_ants.start;
 		ft_printf("[%s]", start->name);
-		while (start != g_ants.end)
+		while (start != g_ants.end && start->path != -1)
 		{
 			start = findnextbyway(start, i);
 			ft_printf("->[%s]", start->name);

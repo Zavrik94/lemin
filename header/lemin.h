@@ -100,6 +100,8 @@ bool				parse_flags(const char *str);
 bool				parse_flags2(const char *str);
 int 				findbestways();
 void				printways();
+int     			countconnroom(char  *name, t_con *head);
+t_room  			*findprevonway(t_room *room, int num);
 
 
 #endif
