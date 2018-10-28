@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 18:57:17 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 18:57:17 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 19:59:40 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,4 +84,6 @@ void	path(t_room *start, t_room *end)
 	while (g_ants.start->conn[++i])
 		if (g_ants.start->conn[i]->path > max)
 			g_ants.start->path = max + 1;
+	if (g_ants.start->path == 0)
+		ft_error("Has no way");
 }

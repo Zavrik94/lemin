@@ -6,5 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/Users/azavrazh/projects/lemin/ft_printf/libft/ft_strstr.c
+../ft_printf/includes/ft_printf.h
+../libft/libft.h
+../ft_printf/libft/libft.h
+stdarg.h
+-
+
+../ft_printf/libft/libft.h
+stdlib.h
+-
+unistd.h
+-
+stddef.h
+-
+fcntl.h
+-
+stdint.h
+-
+stdbool.h
+-
+limits.h
+-
+sys/types.h
+-
+
+../header/lemin.h
+../ft_printf/includes/ft_printf.h
+../ft_printf/includes/ft_printf.h
+stdio.h
+-
+
+/Users/azavrazh/projects/lemin/src/read.c
+lemin.h
+-
 

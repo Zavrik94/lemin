@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 19:13:04 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 19:13:06 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 19:50:32 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void	read_room(const char *line)
 	g_ants.room->next = (t_room*)malloc(sizeof(t_room));
 	g_ants.room = g_ants.room->next;
 	g_ants.room->prev = temp;
+	g_ants.room->next = NULL;
 	delaftersplit(&room);
 }
 

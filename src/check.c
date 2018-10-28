@@ -6,11 +6,27 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 16:09:29 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/10/28 16:09:29 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 19:53:33 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <lemin.h>
+
+int		havesameroom(char *name)
+{
+	t_room *room;
+
+	room = headofroom(g_ants.room);
+	while (room)
+	{
+		if (room->next == NULL)
+			break ;
+		if (ft_strequ(room->name, name))
+			return (1);
+		room = room->next;
+	}
+	return (0);
+}
 
 void	check_room(const char *str)
 {
@@ -36,6 +52,8 @@ void	check_room(const char *str)
 	while (chk[0][++i])
 		if (chk[0][i] == ' ' || chk[0][i] == '\t' || chk[0][i] == '-')
 			ft_error("Room has bad format!");
+	if (havesameroom(chk[0]))
+		ft_error("Duplicate room");
 	delaftersplit(&chk);
 }
 
