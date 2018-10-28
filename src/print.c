@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/28 19:07:44 by azavrazh          #+#    #+#             */
+/*   Updated: 2018/10/28 19:07:44 by azavrazh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <lemin.h>
 
-void	print_map()
+void	print_map(void)
 {
 	while (g_ants.output_start)
 	{
@@ -13,10 +25,12 @@ void	print_map()
 
 t_room	*findnextbyway(t_room *room, int way)
 {
-	int 	i = -1;
-	int 	min = 0;
-	int 	res;
+	int		i;
+	int		min;
+	int		res;
 
+	i = -1;
+	min = 0;
 	while (room->conn[++i])
 	{
 		if (g_ants.flags.start_end && room != g_ants.start)
@@ -25,12 +39,9 @@ t_room	*findnextbyway(t_room *room, int way)
 		if (!g_ants.flags.start_end)
 			if (room->conn[i] == g_ants.end)
 				return (room->conn[i]);
-		if (min == 0 && room->conn[i]->onway == way && room->conn[i] != g_ants.start)
-		{
-			res = i;
-			min = room->path;
-		}
-		else if (room->conn[i]->path < min && room->conn[i]->onway == way)
+		if ((min == 0 && room->conn[i]->onway == way
+		&& room->conn[i] != g_ants.start)
+		|| (room->conn[i]->path < min && room->conn[i]->onway == way))
 		{
 			res = i;
 			min = room->path;
@@ -39,11 +50,12 @@ t_room	*findnextbyway(t_room *room, int way)
 	return (room->conn[res]);
 }
 
-void	printways()
+void	printways(void)
 {
 	t_room	*start;
-	int 	i = 0;
+	int		i;
 
+	i = 0;
 	while (++i <= g_ants.numofways)
 	{
 		start = g_ants.start;

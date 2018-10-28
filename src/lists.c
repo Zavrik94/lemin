@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lists.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/28 17:30:59 by azavrazh          #+#    #+#             */
+/*   Updated: 2018/10/28 17:30:59 by azavrazh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <lemin.h>
 
 t_room	*findroombyname(char *name)
@@ -13,16 +25,17 @@ t_room	*findroombyname(char *name)
 	}
 	return (NULL);
 }
+
 t_room	*headofroom(t_room *list)
 {
 	while (list->prev)
 		list = list->prev;
-	return(list);
+	return (list);
 }
 
 t_con	*headofcon(t_con *list)
 {
 	while (list->prev)
 		list = list->prev;
-	return(list);
+	return (list);
 }

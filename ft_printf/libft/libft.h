@@ -6,7 +6,7 @@
 /*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 20:12:40 by azavrazh          #+#    #+#             */
-/*   Updated: 2018/09/14 10:38:25 by azavrazh         ###   ########.fr       */
+/*   Updated: 2018/10/28 17:24:43 by azavrazh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,13 @@ typedef struct		s_list
 
 char				*ft_strncpy(const char *src, size_t len);
 size_t				ft_strlen(const char *str);
-void				ft_putstr(char const *s);
+int					ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 char				*ft_itoa(int n);
 void				ft_putchar(char c);
-void				ft_putstr(char const *s);
 void				ft_putnbr(int n);
 void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(char const *s, int fd);
+int					ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				*ft_bzero(void *str, size_t num);

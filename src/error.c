@@ -1,12 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: azavrazh <azavrazh@student.unit.ua>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/28 17:29:54 by azavrazh          #+#    #+#             */
+/*   Updated: 2018/10/28 17:29:54 by azavrazh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <lemin.h>
 
-static const char	g_usage[] = "Usage: ./lem-in "
-	 "[--silent] [--solo] [--ways] [--steps] [--help] (< file|file)"
-	 "";
+const char	*g_usage = "Usage: ./lem-in "
+"[--silent] [--solo] [--ways] [--steps] [--help] (< file|file)\n"
+"\t--silent : hide map in output\n"
+"\t--solo : chose only one min path\n"
+"\t--way : display all posible ways\n"
+"\t--steps : display final steps\n"
+"\t--help : look help information\n";
 
-void	delaftersplit(char ***arr)
+void		delaftersplit(char ***arr)
 {
-	int 	i;
+	int		i;
 	char	**temp;
 
 	i = -1;
@@ -19,10 +35,11 @@ void	delaftersplit(char ***arr)
 	free(temp);
 }
 
-void    ft_error(char *err)
+void		ft_error(char *err)
 {
 	if (!err)
-		ft_printf("%s\n", g_usage);
-	ft_printf("%s\n", err);
+		ft_putstr(g_usage);
+	else
+		ft_printf("%s\n", err);
 	exit(0);
 }
