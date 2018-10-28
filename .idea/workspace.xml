@@ -12,6 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1449a005-b63d-4d56-a6fd-c954291949b6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ft_printf/libft/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/libft/ft_atoi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/read.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/read.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -44,7 +46,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="58" />
-          <entry key="c" value="20170" />
+          <entry key="c" value="20313" />
           <entry key="h" value="901" />
           <entry key="m" value="80" />
           <entry key="test" value="720" />
@@ -52,7 +54,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="21151" />
+          <entry key="ObjectiveC" value="21294" />
           <entry key="PLAIN_TEXT" value="778" />
         </counts>
       </usages-collector>
@@ -62,12 +64,12 @@
           <entry key="abodnar" value="1" />
           <entry key="abykov" value="1" />
           <entry key="akupriia" value="1" />
-          <entry key="c" value="111" />
+          <entry key="c" value="112" />
           <entry key="cbp" value="3" />
           <entry key="cmake" value="1" />
           <entry key="error1" value="1" />
           <entry key="error2" value="1" />
-          <entry key="h" value="21" />
+          <entry key="h" value="23" />
           <entry key="kaban" value="1" />
           <entry key="kasamara" value="1" />
           <entry key="map" value="12" />
@@ -80,7 +82,7 @@
         <counts>
           <entry key="CMakeCache.txt" value="1" />
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="132" />
+          <entry key="ObjectiveC" value="135" />
           <entry key="PLAIN_TEXT" value="56" />
         </counts>
       </usages-collector>
@@ -116,24 +118,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/connections.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1129">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lemin.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -163,8 +147,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/read.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
+            <state relative-caret-position="533">
+              <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_atoi.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -213,7 +206,6 @@
         <option value="$PROJECT_DIR$/ft_printf/includes/ft_printf.h" />
         <option value="$PROJECT_DIR$/ft_printf/libft/ft_isnum.c" />
         <option value="$PROJECT_DIR$/ft_printf/libft/ft_strcmp.c" />
-        <option value="$PROJECT_DIR$/ft_printf/libft/ft_atoi.c" />
         <option value="$PROJECT_DIR$/ft_printf/libft/ft_strsplit.c" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/ft_printf/libft/ft_strdup.c" />
@@ -237,6 +229,7 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/test" />
         <option value="$PROJECT_DIR$/src/path.c" />
         <option value="$PROJECT_DIR$/src/check.c" />
+        <option value="$PROJECT_DIR$/ft_printf/libft/ft_atoi.c" />
         <option value="$PROJECT_DIR$/src/read.c" />
       </list>
     </option>
@@ -341,6 +334,17 @@
             <path>
               <item name="lemin" type="b2602c69:ProjectViewProjectNode" />
               <item name="lemin" type="462c0819:PsiDirectoryNode" />
+              <item name="ft_printf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemin" type="462c0819:PsiDirectoryNode" />
+              <item name="ft_printf" type="462c0819:PsiDirectoryNode" />
+              <item name="libft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lemin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lemin" type="462c0819:PsiDirectoryNode" />
               <item name="header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,12 +437,12 @@
       <workItem from="1540645279357" duration="18805000" />
       <workItem from="1540723866186" duration="74000" />
       <workItem from="1540724052507" duration="8258000" />
-      <workItem from="1540735701293" duration="8971000" />
+      <workItem from="1540735701293" duration="9589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105129000" />
+    <option name="totallyTimeSpent" value="105747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -556,9 +560,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/maps/9_path_depth_1_ants.map">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/maps/9_path_depth_2_ants.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23500" />
@@ -614,13 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_atoi.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -877,10 +871,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/stdint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_printf/libft/ft_atoi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/read.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
+        <state relative-caret-position="533">
+          <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
         </state>
       </provider>
     </entry>
