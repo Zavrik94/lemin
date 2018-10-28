@@ -11,13 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "../../header/lemin.h"
 
-char	*ft_strscpy(char *str, int start)
+char	*ft_strscpy(const char *str, int start)
 {
 	char	*res;
 	int		i;
 
-	res = (char*)malloc(sizeof(char) * (ft_strlen(str) - start) + 1);
+	res = (char*)malloc(sizeof(char) * ((ft_strlen(str) - start) + 1));
 	res[ft_strlen(str) - start] = '\0';
 	i = 0;
 	while (str[start])

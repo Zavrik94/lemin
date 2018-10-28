@@ -35,16 +35,16 @@ int     haveway()
 void    checkaroundthisconn(t_room *room)
 {
 	int 	con;
-	int     i = -1;
+//	int     i = -1;
 
 	con = countconnroom(room->name, headofcon(g_ants.conn));
 	if (con < 3)
 		return ;
-	while (room->conn[++i])
-	{
-		if (room->conn[i]->path == 0 && room->conn[i] != g_ants.start)
-			room->conn[i]->path = -1;
-	}
+//	while (room->conn[++i])
+//	{
+//		if (room->conn[i]->path == 0 && room->conn[i] != g_ants.start)
+//			room->conn[i]->path = -1;
+//	}
 }
 
 void    path(t_room *start, t_room *end)
@@ -58,7 +58,9 @@ void    path(t_room *start, t_room *end)
     {
         while (head)
         {
-        	if (countconnroom(head->name, headofcon(g_ants.conn)) == 1 && head != g_ants.start && head != g_ants.end && head->conn[0])
+        	//if (!head->conn[0])
+        		//ft_printf("%s\n", head->name);
+        	if (countconnroom(head->name, headofcon(g_ants.conn)) == 1 && head != g_ants.start && head != g_ants.end)
 				head->conn[0]->path = -1;
             else if (head->path != 0) {
                 i = -1;

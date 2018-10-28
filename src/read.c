@@ -31,7 +31,7 @@ void	init_deinit(bool indeinit, int cnt)
 	}
 }
 
-void	read_room(char *line)
+void	read_room(const char *line)
 {
 	char	**room;
 	t_room	*temp;
@@ -59,7 +59,7 @@ void	read_room(char *line)
 	delaftersplit(&room);
 }
 
-void	read_conn(char *line)
+void	read_conn(const char *line)
 {
 	t_con	*tmp;
 
@@ -71,9 +71,9 @@ void	read_conn(char *line)
 	g_ants.conn->prev = tmp;
 }
 
-bool	add_node_to_output(char *line)
+bool	add_node_to_output(const char *line)
 {
-	g_ants.output->str = line;
+	g_ants.output->str = (char *)line;
 	g_ants.output->next = (t_ln*)ft_memalloc(sizeof(t_ln));
 	g_ants.output->next->prev = g_ants.output;
 	g_ants.output = g_ants.output->next;
@@ -88,6 +88,7 @@ void	ft_read(int fd)
 	cnt = 0;
 	g_ants.antcnt = -1;
 	init_deinit(true, cnt);
+
 	while(get_next_line(fd, &line) > 0 && line[0])
 	{
 		add_node_to_output(line);

@@ -18,6 +18,8 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	unsigned char	*d1;
 	unsigned char	*d2;
 
+	if (!haystack || !needle || !*haystack || !*needle)
+		return (0);
 	d1 = (unsigned char *)haystack;
 	d2 = (unsigned char *)needle;
 	count = 0;

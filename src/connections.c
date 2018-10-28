@@ -60,11 +60,12 @@ void    addcontorom(char *name, t_con *head)
 	if (con == 0)
 		ft_error("Room with no connections");
 	g_ants.rhead->conn = (t_room**)malloc(sizeof(t_room*) * (con + 1));
+	g_ants.rhead->conn[0] = NULL;
     i = -1;
     while (head)
 	{
     	if (ft_strstr(head->name, name) && havethisconn(name, head))
-    		con--;
+			con--;
 		else if (ft_strstr(head->name, name) && !havethisconn(name, head))
 		{
 

@@ -177,8 +177,10 @@ CMakeFiles/lemin.dir/ft_printf/libft/ft_strrev.c.o
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strrev.c
  /Users/azavrazh/projects/lemin/ft_printf/libft/libft.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o
+ /Users/azavrazh/projects/lemin/ft_printf/includes/ft_printf.h
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strscpy.c
  /Users/azavrazh/projects/lemin/ft_printf/libft/libft.h
+ /Users/azavrazh/projects/lemin/header/lemin.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o
  /Users/azavrazh/projects/lemin/ft_printf/includes/ft_printf.h
  /Users/azavrazh/projects/lemin/ft_printf/libft/ft_strsplit.c

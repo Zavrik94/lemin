@@ -176,8 +176,10 @@ CMakeFiles/lemin.dir/ft_printf/libft/ft_strrchr.c.o: ../ft_printf/libft/ft_strrc
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strrev.c.o: ../ft_printf/libft/ft_strrev.c
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strrev.c.o: ../ft_printf/libft/libft.h
 
+CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../ft_printf/libft/ft_strscpy.c
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/lemin.dir/ft_printf/libft/ft_strscpy.c.o: ../header/lemin.h
 
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/includes/ft_printf.h
 CMakeFiles/lemin.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/libft/ft_strsplit.c

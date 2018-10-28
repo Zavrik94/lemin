@@ -59,7 +59,7 @@ void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *str, int c, size_t n);
 int					ft_memcmp(const void *mem1, const void *mem2, size_t n);
-char				*ft_strdup(char *src);
+char				*ft_strdup(const char *src);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
@@ -110,6 +110,6 @@ void				ft_printarr(char **arr);
 char				**ft_copyarr(char **arr);
 void				ft_printnumbarr(int fd, int **arr, int x, int y);
 void				ft_printarr_fd(int fd, char **arr);
-char				*ft_strscpy(char *str, int start);
+char				*ft_strscpy(const char *str, int start);
 
 #endif

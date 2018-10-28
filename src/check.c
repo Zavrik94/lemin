@@ -1,6 +1,6 @@
 #include <lemin.h>
 
-int     check_room(char *str)
+int     check_room(const char *str)
 {
     int		i;
     int		spc;
@@ -34,7 +34,7 @@ int     check_room(char *str)
     return (1);
 }
 
-void     check_con(char *str)
+void     check_con(const char *str)
 {
     int		i;
     int		t;
@@ -86,12 +86,12 @@ int 	havethisconn(char *roomname, t_con *conn)
 	int 	i;
 
 	room = findroombyname(roomname);
-	i = -1;
 	if (room->conn == NULL)
 		return (0);
+	i = -1;
 	while (room->conn[++i])
 	{
-		if (room->conn[i] == findroombycon(roomname, conn, headofroom(g_ants.room)))
+		if (room->conn[i] == findroombycon(room->name, conn, headofroom(g_ants.room)))
 			return (1);
 	}
 	return (0);
